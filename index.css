@@ -1,0 +1,59 @@
+/* styles.css */
+body {
+  margin: 0;
+  padding: 20px;
+  background-color: beige;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Weekday headers */
+.day-name {
+  background-color: #00bcd4;
+  color: white;
+  padding: 8px 0;
+  font-weight: bold;
+  border: 1px solid #888;
+}
+
+/* Empty placeholder cells */
+.day.blank {
+  background: transparent;
+  border: none;
+}
+
+/* Day cells */
+.day {
+  background-color: white;
+  border: 1px solid #888;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.date {
+  padding: 4px;
+  font-weight: bold;
+  border-bottom: 1px solid #ccc;
+  text-align: left;
+}
+
+.content {
+  flex: 1;
+  padding: 6px;
+  outline: none;
+  text-align: left;
+  background-color: #f0f8ff;
+}
